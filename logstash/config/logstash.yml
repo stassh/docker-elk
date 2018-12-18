@@ -1,3 +1,10 @@
+pipeline.id: main-new
+path.config: /usr/share/logstash/pipeline/*.conf
+config.reload.automatic: true
+log.level: info
+path.logs: /usr/share/logstash/logs
+# config.debug: true
+
 #
 # Settings can be specified either in hierarchical form, e.g.:
 #
@@ -30,7 +37,7 @@
 #
 # The ID of the pipeline.
 #
-pipeline.id: main-new
+# pipeline.id: main-new
 #
 # Set the number of workers that will, in parallel, execute the filters+outputs
 # stage of the pipeline.
@@ -60,7 +67,7 @@ pipeline.id: main-new
 #
 # Where to fetch the pipeline configuration for the main pipeline
 #
-path.config: /usr/share/logstash/pipeline/*.conf
+# path.config: /usr/share/logstash/pipeline/*.conf
 #
 # Pipeline configuration string for the main pipeline
 #

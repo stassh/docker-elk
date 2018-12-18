@@ -1,0 +1,3 @@
+logstash/src/stats.log
+logstash/logs/logstash-plain.log
+logstash/logs/logstash-slowlog-plain.log

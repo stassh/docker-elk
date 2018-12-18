@@ -32,8 +32,10 @@ services:
     depends_on:
       - elasticsearch
   logstash:
-    image: docker.elastic.co/logstash/logstash:6.3.2
+    image: docker.elastic.co/logstash/logstash:6.5.3
     container_name: logstash
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     volumes:
       - ./logstash/pipeline/:/usr/share/logstash/pipeline/
       - ./logstash/config/:/usr/share/logstash/config/
